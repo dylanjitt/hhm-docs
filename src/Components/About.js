@@ -6,7 +6,11 @@ class About extends Component {
     if (!this.props.data) return null;
 
     const name = this.props.data.name;
-    const profilepic = "images/" + this.props.data.image;
+    const profilepic = "images/" + "dylan.jpg";
+    const profilepic1 = "images/" + "vivs.jpg";
+    const profilepic2 = "images/" + "perry.jpg";
+    const profilepic3 = "images/" + "kat.jpg";
+
     const bio = this.props.data.bio;
     const street = this.props.data.address.street;
     const city = this.props.data.address.city;
@@ -28,34 +32,51 @@ class About extends Component {
               />
             </div>
             <div className="nine columns main-col">
-              <h2>About Me</h2>
+              <h2>Dylan Jitton</h2>
 
-              <p>{bio}</p>
-              <div className="row">
-                <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{name}</span>
-                    <br />
-                    <span>
-                      {street}
-                      <br />
-                      {city} {state}, {zip}
-                    </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                  </p>
-                </div>
-                <div className="columns download">
-                  <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
-                  </p>
-                </div>
-              </div>
+              <p>Desarrollador Frontend</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="three columns">
+              <img
+                className="profile-pic"
+                src={profilepic1}
+                alt="Nordic Giant Profile Pic"
+              />
+            </div>
+            <div className="nine columns main-col">
+              <h2>Vivian Marino</h2>
+
+              <p>Desarrollador FullStack</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="three columns">
+              <img
+                className="profile-pic"
+                src={profilepic2}
+                alt="Nordic Giant Profile Pic"
+              />
+            </div>
+            <div className="nine columns main-col">
+              <h2>Luis Paricollo</h2>
+
+              <p>Desarrollador Backend</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="three columns">
+              <img
+                className="profile-pic"
+                src={profilepic3}
+                alt="Nordic Giant Profile Pic"
+              />
+            </div>
+            <div className="nine columns main-col">
+              <h2>Katzumi Urdininea</h2>
+
+              <p>Especialista QA</p>
             </div>
           </div>
         </Fade>

@@ -79,18 +79,26 @@ header .banner-text hr {
 }
 
 /* header social links */
+/* header social links */
 header .social {
    margin: 24px 0;
    padding: 0;
    font-size: 30px;
+   list-style: none; /* Remove bullet points */
+   display: flex; /* Flexbox makes the items align in a row */
+   flex-direction: row; /* Align items in a row */
+   gap: 15px; /* Adds spacing between items */
 }
 header .social li {
-   display: inline-block;
-   margin: 0 15px;
+   margin: 0; /* Remove the existing margin */
    padding: 0;
 }
-header .social li a { color: #fff; }
-header .social li a:hover { color: #0762f9; }
+header .social li a {
+   color: #fff;
+}
+header .social li a:hover {
+   color: #0762f9;
+}
 
 /* scrolldown link */
 header .scrolldown a {
@@ -244,6 +252,7 @@ ul#nav li.current a { color: #fe6928; }
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
+   line-height: 48px;
 }
 #resume h1 span {
    border-bottom: 3px solid #0762f9;
@@ -251,6 +260,11 @@ ul#nav li.current a { color: #fe6928; }
 }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#resume p{
+   font-size: 16px;
+   color: black;
 }
 
 #resume .header-col { padding-top: 9px; }

@@ -21,22 +21,79 @@ class Portfolio extends Component {
     });
 
     return (
-      <section id="portfolio">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
+<section id="portfolio">
+  <Fade left duration={1000} distance="40px">
+    <div className="row">
+      <div className="twelve columns collapsed">
+        <h1>Personal</h1>
 
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
+        <div id="portfolio-wrapper" className="portfolio-container">
+          <div className="row">
+            <div className="columns portfolio-item">
+              <div className="item-wrap">
+                <div style={{ textAlign: "center", padding: "15px" }}>
+                  <h3>Desarrollador Backend</h3>
+                  <p>Experiencia: Express JS</p>
+                </div>
+              </div>
+            </div>
+            <div className="columns portfolio-item">
+              <div className="item-wrap">
+                <div style={{ textAlign: "center", padding: "15px" }}>
+                  <h3>Desarrollador Frontend</h3>
+                  <p>Experiencia: React JS</p>
+                </div>
+              </div>
+            </div>
+            <div className="columns portfolio-item">
+              <div className="item-wrap">
+                <div style={{ textAlign: "center", padding: "15px" }}>
+                  <h3>Desarrollador Fullstack</h3>
+                  <p>Experiencia: React JS, Express JS</p>
+                </div>
+              </div>
+            </div>
+            <div className="columns portfolio-item">
+              <div className="item-wrap">
+                <div style={{ textAlign: "center", padding: "15px" }}>
+                  <h3>QA</h3>
+                  <p>Experiencia: Mocha, Chai, Jest, Cypress, JMeter</p>
+                </div>
               </div>
             </div>
           </div>
-        </Fade>
-      </section>
+          <div className="row">
+            <div className="columns portfolio-item">
+              <div className="item-wrap">
+                <div style={{ textAlign: "center", padding: "15px" }}>
+                  <h3>Especialista DBA</h3>
+                  <p>Experiencia: MySQL</p>
+                </div>
+              </div>
+            </div>
+            <div className="columns portfolio-item">
+              <div className="item-wrap">
+                <div style={{ textAlign: "center", padding: "15px" }}>
+                  <h3>Especialista DevOps</h3>
+                  <p>Experiencia: AWS, Nginx, GithubActions, Jenkins</p>
+                </div>
+              </div>
+            </div>
+            <div className="columns portfolio-item">
+              <div className="item-wrap">
+                <div style={{ textAlign: "center", padding: "15px" }}>
+                  <h3>Diseñador</h3>
+                  <p>Experiencia: Figma</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Fade>
+</section>
+
     );
   }
 }

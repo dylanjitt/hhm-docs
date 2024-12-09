@@ -526,6 +526,31 @@ ul#nav li.current a { color: #fe6928; }
 	filter:alpha(opacity=100);
 }
 
+.portfolio-container .row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; /* Adjust spacing between items */
+   margin-bottom: 20px; /* Add some space between rows */
+ }
+
+ .portfolio-container .portfolio-item {
+   flex: 1 1 calc(25% - 20px); /* 4 items per row, with spacing */
+   margin: 10px; /* Add space around items */
+   box-sizing: border-box;
+ }
+
+ @media (max-width: 768px) {
+   .portfolio-container .portfolio-item {
+     flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .portfolio-container .portfolio-item {
+     flex: 1 1 100%; /* 1 item per row on very small screens */
+   }
+ }
+
 /* popup modal */
 .popup-modal {
 	max-width: 550px;

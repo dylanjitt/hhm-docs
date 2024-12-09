@@ -67,7 +67,7 @@ class Header extends Component {
                 <a href="files/Herramientas.pdf" className="button btn project-btn" download="Herramientas.pdf">
                   <i className="fa fa-book"></i>Herramientas
                 </a>
-                <a href={project} className="button btn project-btn">
+                <a href="files/Metodologias.pdf" className="button btn project-btn" download="Metodologias.pdf">
                   <i className="fa fa-book"></i>Metodologías y Enfoques
                 </a>
               </ul>
